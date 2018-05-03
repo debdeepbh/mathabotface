@@ -10,6 +10,8 @@ A Python script tweeting about theorems, lemmas and inequalities extracted from 
 * to add shortened urls: tinyurl (`sudo pip install TinyURL3`). Added the TinyURL.py from the TinyURL3 git in case the installation fails. So, this part is unnecessary. However, to use this file, you need beautifulsoup4, so install it using `sudo apt-get install python3-bs4` (for ubuntu)
  
 * These files:  `git clone http://github.com/debdeep777/MathBotFace && cd MathBotFace`
+* Set up a twitter app account with access key, token, consumer key and consumer secret and update it in the file `tweet.py`.
+
 
 # Usage
 * `python fetchWiki.py` to get the titles from wikipedia (which stores it in .DAT files)
