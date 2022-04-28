@@ -1,0 +1,74 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_KEY	tweet.py	/^ACCESS_KEY = ''$/;"	v
+ACCESS_SECRET	tweet.py	/^ACCESS_SECRET = ''$/;"	v
+ALL_OPTIONS	TinyURL.py	/^ALL_OPTIONS = ((('-d', '--delimiter'), dict($/;"	v
+API_CREATE_LIST	TinyURL.py	/^API_CREATE_LIST = [$/;"	v
+AliasUsed	TinyURL.py	/^    class AliasUsed(Exception):$/;"	c	class:errors
+CONSUMER_KEY	tweet.py	/^CONSUMER_KEY = ''$/;"	v
+CONSUMER_SECRET	tweet.py	/^CONSUMER_SECRET = ''$/;"	v
+DEFAULT_DELIM	TinyURL.py	/^DEFAULT_DELIM = "\\n"$/;"	v
+InvalidAlias	TinyURL.py	/^    class InvalidAlias(Exception):$/;"	c	class:errors
+InvalidURL	TinyURL.py	/^    class InvalidURL(Exception):$/;"	c	class:errors
+URLError	TinyURL.py	/^    class URLError(Exception):$/;"	c	class:errors
+__author__	TinyURL.py	/^__author__ = 'Decorater'$/;"	v
+__build__	TinyURL.py	/^__build__ = 0x0001010$/;"	v
+__copyright__	TinyURL.py	/^__copyright__ = 'Copyright 2015-2017 Decorater'$/;"	v
+__license__	TinyURL.py	/^__license__ = 'MIT'$/;"	v
+__title__	TinyURL.py	/^__title__ = 'TinyURL'$/;"	v
+__version__	TinyURL.py	/^__version__ = '0.1.10'$/;"	v
+_build_option_parser	TinyURL.py	/^def _build_option_parser():$/;"	f
+allowedTypes	tweet.py	/^allowedTypes = ['theorems','lemmas','inequalities' ]$/;"	v
+allowedTypes	wikiOut.py	/^allowedTypes = ['theorems','lemmas','inequalities' ]$/;"	v
+api	tweet.py	/^api = Twython(CONSUMER_KEY,CONSUMER_SECRET,ACCESS_KEY,ACCESS_SECRET)$/;"	v
+articleLink	tweet.py	/^articleLink = wiki.page(randomTitle).url$/;"	v
+articleLink	wikiOut.py	/^articleLink = wiki.page(randomTitle).url$/;"	v
+articleSummary	tweet.py	/^articleSummary = wiki.summary(title = randomTitle, sentences=2)$/;"	v
+articleSummary	wikiOut.py	/^articleSummary = wiki.summary(title = randomTitle, sentences=1)$/;"	v
+body	tweet.py	/^        body = hashTag + secondPart # [1]th array element is the ',' itself! That's why [2].$/;"	v
+body	tweet.py	/^body = articleSummary[:num]$/;"	v
+body	wikiOut.py	/^body = articleSummary[:num]$/;"	v
+cleaned	fetchWiki.py	/^    cleaned = []$/;"	v
+create	TinyURL.py	/^def create(*urls):$/;"	f
+create_one	TinyURL.py	/^def create_one(url, alias=None):$/;"	f
+errors	TinyURL.py	/^class errors:$/;"	c
+fileName	tweet.py	/^    fileName = allowedTypes[randomType]+'List.dat'$/;"	v
+fileName	tweet.py	/^    fileName=sys.argv[1]+'List.dat' # e.g. theoremsList.dat$/;"	v
+fileName	wikiOut.py	/^    fileName = allowedTypes[randomType]+'List.dat'$/;"	v
+fileName	wikiOut.py	/^    fileName=sys.argv[1]+'List.dat' # e.g. theoremsList.dat$/;"	v
+finalString	tweet.py	/^finalString = body + "\\n" + tinierLink$/;"	v
+firstChunk	tweet.py	/^        firstChunk = body.partition(',')[0]     # the part before comma$/;"	v
+firstimg	wikiOut.py	/^    firstimg = ''$/;"	v
+firstimg	wikiOut.py	/^    firstimg = wiki.page(randomTitle).images[0]$/;"	v
+gain	tweet.py	/^        gain = len(firstChunk) - len(hashTag) + 1   # gained some letters in this process$/;"	v
+hashTag	tweet.py	/^        hashTag = '#' + removeIn.title().replace(' ','')    # title() makes the first letter of every work upper case, and replace(' ','') removes whitespaces$/;"	v
+help	TinyURL.py	/^    help='delimiter for returned results')),)$/;"	v
+keyword	fetchWiki.py	/^    keyword = ["theorem", "Theorem", "lemma", "Lemma", "inequality","Inequality","inequalities", "Inequalities", "approximation"] # many inequalities are called theorems$/;"	v
+links	fetchWiki.py	/^    links = theList.links$/;"	v
+links	tweet.py	/^links = pickle.load(open(fileName,'rb'))  # Need to open in binary to read unicode$/;"	v
+links	wikiOut.py	/^links = pickle.load(open(fileName,'rb'))  # Need to open in binary to read unicode$/;"	v
+main	TinyURL.py	/^def main():$/;"	f
+myFile	fetchWiki.py	/^    myFile = open(type + 'List.dat', 'wb')	# Opening in binary foramt$/;"	v
+newNum	tweet.py	/^        newNum = num + gain$/;"	v
+num	tweet.py	/^num = 280 - len(tinierLink) - 5 # This number seems optimum based on the behaviour of twitter$/;"	v
+num	wikiOut.py	/^num = 300$/;"	v
+parse_helper	TinyURL.py	/^    parse_helper = urllib$/;"	v
+parse_helper	TinyURL.py	/^    parse_helper = urllib.parse$/;"	v
+pattern	TinyURL.py	/^pattern = "(arp|dns|dsn|imap|http|sftp|ftp|icmp|idrp|ip|irc|pop3|par|rlogin"$/;"	v
+randomNumber	tweet.py	/^randomNumber =randint(0,len(links)-1)$/;"	v
+randomNumber	wikiOut.py	/^randomNumber =randint(0,len(links)-1)$/;"	v
+randomTitle	tweet.py	/^randomTitle = links[randomNumber] # Random title$/;"	v
+randomTitle	wikiOut.py	/^randomTitle = links[randomNumber] # Random title$/;"	v
+randomType	tweet.py	/^    randomType = randint(0,2)$/;"	v
+randomType	wikiOut.py	/^    randomType = randint(0,2)$/;"	v
+removeIn	tweet.py	/^        removeIn = firstChunk.split(' ',1)[1]   # remove "In"$/;"	v
+request_helper	TinyURL.py	/^    request_helper = urllib$/;"	v
+request_helper	TinyURL.py	/^    request_helper = urllib.request$/;"	v
+secondPart	tweet.py	/^        secondPart = articleSummary[:newNum].partition(',')[2]$/;"	v
+theList	fetchWiki.py	/^    theList = wiki.page("list of " + type)$/;"	v
+tinierLink	tweet.py	/^tinierLink = tinyLink.split('\/\/')[1]    #break the string at \/\/ and use the second part, which is indexed as [1]$/;"	v
+tinyLink	tweet.py	/^tinyLink = tinyurl.create_one(articleLink)$/;"	v
